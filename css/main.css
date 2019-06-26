@@ -1,0 +1,111 @@
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__rating,
+.main__projects {
+  position: relative;
+  background: #e8e8e8;
+  width: 100%;
+}
+
+.main__projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.main__title-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: 80px auto 20px;
+  width: 100%;
+  max-width: 1170px;
+  font-family: 'Cera Pro Bold';
+}
+
+.main__title {
+  margin: 0;
+  padding: 0 50px 0 15px;
+  text-transform: uppercase;
+  font-size: 32px;
+  color: #231f20;
+}
+
+.main__title-link {
+  font-size: 14px;
+  color: #bd2226;
+}
+
+.main__review,
+.main__articles {
+  width: 100%;
+  max-width: 1170px;
+}
+
+.main__order-project-button {
+  background: #bd2226;
+  border: none;
+  margin: 10px auto 65px;
+  padding: 0;
+  width: 250px;
+  height: 58px;
+  text-transform: uppercase;
+  font-family: 'Cera Pro Bold';
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.main__about  {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .main__title-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .main__title {
+    padding-left: 45px;
+  }
+
+  .main__title-link {
+    padding: 15px 0 0 45px;
+  }
+}

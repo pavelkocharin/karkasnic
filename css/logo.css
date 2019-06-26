@@ -1,0 +1,23 @@
+.logo {
+  padding-left: 15px;
+}
+
+.logo__link {
+  padding-top: 15px;
+  white-space: nowrap;
+}
+
+.logo__mobile {
+  padding-right: 5px;
+}
+
+
+@media (max-width: 767px) {
+  .logo {
+    padding: 10px 0 0 45px;
+  }
+
+  .logo__desktop {
+    display: none;
+  }
+}

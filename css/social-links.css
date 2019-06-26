@@ -1,0 +1,16 @@
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 30px;
+}
+
+.social-links__item {
+  padding: 0 6px;
+  width: 23px;
+  height: 23px;
+  text-decoration: none;
+}

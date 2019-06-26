@@ -1,0 +1,136 @@
+.rating {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+  padding: 0;
+}
+
+.rating__top {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  border-top: 12px solid #868225;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, .4);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, .4);
+  -webkit-transform: translate(-50%, -100%);
+      -ms-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+  background: #fff;
+  z-index: 10;
+  width: 70%;
+}
+
+.rating__top-title {
+  padding: 0 15px;
+  text-align: center;
+  font-family: 'Cera Pro Bold';
+  font-size: 38px;
+  color: #231f20;
+}
+
+.rating__top-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.rating__top-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 15px;
+  min-width: 30%;
+}
+
+.rating__top-column-title {
+  font-family: 'Cera Pro Bold';
+  font-size: 20px;
+  color: #231f20;
+}
+
+.rating__top-column-list {
+  padding-left: 20px;
+  list-style-type: none;
+  counter-reset: num;
+}
+
+.rating__top-column-list .rating__top-column-item::before {
+  content: counter(num) ''; 
+  counter-increment: num;
+  position: absolute;
+  top: 8px;
+  left: -30px;
+  width: 20px;    
+  text-align: right;
+  font-size: 14px;
+  color: #231f20;
+}
+
+.rating__top-column-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding: 8px 0;
+}
+
+.rating__top-column-link {
+  width: 100%;
+  font-size: 14px;
+  color: #bd2226;
+}
+
+.rating__top-column-sum {
+  padding-left: 15px;
+  font-family: 'Cera Pro Bold';
+  font-size: 14px;
+  color: #868225;
+}
+
+.rating__top-column-all-link {
+  text-align: left;
+  font-family: 'Cera Pro Bold';
+  font-size: 14px;
+  color: #bd2226;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .rating__top {
+    position: relative;
+    top: auto;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 100%;
+  }
+
+  .rating__top-title {
+    font-size: 28px;
+  }
+
+  .rating__top-column-title {
+    margin-bottom: 15px;
+  }
+
+  .rating__top-column-list {
+    margin-top: 0;
+  }
+
+  .rating__top-column-all-link {
+    margin-bottom: 15px;
+  }
+}

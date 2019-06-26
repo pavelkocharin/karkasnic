@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Каркасные дома</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/body-page.css" type="text/css">
+    <link rel="stylesheet" href="css/header.css" type="text/css">
+    <link rel="stylesheet" href="css/nav.css" type="text/css">
+    <link rel="stylesheet" href="css/user-region.css" type="text/css">  
+    <link rel="stylesheet" href="css/login-block.css" type="text/css">    
+    <link rel="stylesheet" href="css/logo.css" type="text/css">   
+    <link rel="stylesheet" href="css/social-links.css" type="text/css">
+    <link rel="stylesheet" href="css/search-form.css" type="text/css">   
+    <link rel="stylesheet" href="css/main.css" type="text/css">   
+    <link rel="stylesheet" href="css/rating.css" type="text/css">  
+    <link rel="stylesheet" href="css/info-list.css" type="text/css">   
+    <link rel="stylesheet" href="css/reviews.css" type="text/css">
+    <link rel="stylesheet" href="css/projects.css" type="text/css"> 
+    <link rel="stylesheet" href="css/about-building.css" type="text/css"> 
+    <link rel="stylesheet" href="css/footer.css" type="text/css"> 
+    <link rel="stylesheet" href="css/popup.css" type="text/css">
+    <link rel="stylesheet" href="css/modal.css" type="text/css">
+  </head>
+
+  <body class="body-page">
+    <header class="header">
+      <div class="header__top">
+        <div class="logo">
+          <a href="index.html" class="logo__link">
+            <img src="./img/logo-mobile.png" alt="Логотип мобильная версия" class="logo__mobile">
+            <img src="./img/logo-desktop.png" alt="Логотип мобильная версия" class="logo__desktop">
+          </a>
+          <div class="header__nav-mobile"></div>
+        </div>
+
+        <div class="header__top-content">
+          <div class="header__top-content-upper">
+            <div class="social-links">
+              <a href="" class="social-links__item">
+                <img src="./img/vk.png" alt="Логотип вконтакте" class="social-links__img">
+              </a>
+              <a href="" class="social-links__item">
+                <img src="./img/facebook.png" alt="Логотип facebook" class="social-links__img">
+              </a>
+              <a href="" class="social-links__item">
+                <img src="./img/insta.png" alt="Логотип Инстаграмм" class="social-links__img">
+              </a>
+              <a href="" class="social-links__item">
+                <img src="./img/youtube.png" alt="Логотип YouTube" class="social-links__img">
+              </a>
+            </div>
+
+            <div class="user-region">
+              <span class="user-region__text">Ваш регион:</span><button class="user-region__button" type="button">Москва и область</button>
+            </div>
+          </div>
+
+          <div class="header__top-content-bottom">
+            
+            <ul class="nav">
+              <li class="nav__item">
+                <a class="nav__link" href="">
+                  Обзоры
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">
+                  Строительные компании
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">
+                  Коттеджные поселки
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">
+                  Проекты домов
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">
+                  Статьи
+                </a>
+              </li>
+            </ul>
+
+            <div class="login-block">
+              <div class="login-block__search">
+                <button class="login-block__search-button" type="button"></button>
+              </div>
+              <div class="login-block__profile">
+                <button class="login-block__profile-button" type="button">Личный кабинет</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <h1 class="header__title">
+          Все о каркасных домах<br> и их застройщиках
+        </h1>
+
+        <form class="search-form">
+          <div class="search-form__field">
+            <label for="region" class="search-form__text">Регион</label>
+            <input type="seach" class="search-form__input" id="region" placeholder="Москва и область">
+          </div>
+          <div class="search-form__field">
+            <label for="square" class="search-form__text">Площадь дома</label>
+            <input type="seach" class="search-form__input" id="square" placeholder="10м2">
+          </div>
+          <div class="search-form__field">
+            <label for="floor" class="search-form__text">Этажность</label>
+            <input type="seach" class="search-form__input" id="floor" placeholder="2 этажа">
+          </div>
+          <div class="search-form__field">
+            <label for="price" class="search-form__text">Стоимость объекта</label>
+            <input type="seach" class="search-form__input" id="price" placeholder="от 1 до 4 млн. руб.">
+          </div>
+          <button class="search-form__button" type="submit">Найти</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__rating">
+        
+        <div class="rating">
+          <div class="rating__top">
+            <h2 class="rating__top-title">
+              ТОП-5 застройщиков Москвы
+            </h2>
+            <div class="rating__top-group">
+              <div class="rating__top-column">
+                <h4 class="rating__top-column-title">
+                  По рейтенгу
+                </h4>
+                <ol class="rating__top-column-list">
+                  <li class="rating__top-column-item">
+                    <a href="#" class="rating__top-column-link">
+                      ХОНКА (Honka)
+                    </a>
+                    <span class="rating__top-column-sum">
+                      8.78
+                    </span>
+                  </li>
+                  <li class="rating__top-column-item">
+                    <a href="#" class="rating__top-column-link">
+                      ХОНКАТАЛОT (Honkatalot)
+                    </a>
+                    <span class="rating__top-column-sum">
+                      8.47
+                    </span>
+                  </li>
+                  <li class="rating__top-column-item">
+                    <a href="#" class="rating__top-column-link">
+                      ТАМАК
+                    </a>
+                    <span class="rating__top-column-sum">
+                      8.32
+                    </span>
+                  </li>
+                  <li class="rating__top-column-item">
+                    <a href="#" class="rating__top-column-link">
+                      ЗОДЧИЙ
+                    </a>
+                    <span class="rating__top-column-sum">
+                      8.30
+                    </span>
+                  </li>
+                  <li class="rating__top-column-item">
+                    <a href="#" class="rating__top-column-link">
+                      ВСЛ (ВладимирСтройЛес)
+                    </a>
+                    <span class="rating__top-column-sum">
+                      8.26
+                    </span>
+                  </li>
+                </ol>
+                <a class="rating__top-column-all-link" href="#">
+                  Весь рейтинг
+                </a>
+              </div>
+
+              <div class="rating__top-column">
+                <h4 class="rating__top-column-title">
+                  По отзывам
+                </h4>
+                <ol class="rating__top-column-list">
+                  <li class="rating__top-column-item">
+                    <a href="#" class="rating__top-column-link">
+                      ХОНКА (Honka)
+                    </a>
+                    <span class="rating__top-column-sum">
+                      155
+                    </span>
+                  </li>
+                  <li class="rating__top-column-item">
+                    <a href="#" class="rating__top-column-link">
+                      ХОНКАТАЛОT (Honkatalot)
+                    </a>
+                    <span class="rating__top-column-sum">
+                      135
+                    </span>
+                  </li>
+                  <li class="rating__top-column-item">
+                    <a href="#" class="rating__top-column-link">
+                      ТАМАК
+                    </a>
+                    <span class="rating__top-column-sum">
+                      122
+                    </span>
+                  </li>
+                  <li class="rating__top-column-item">
+                    <a href="#" class="rating__top-column-link">
+                      ЗОДЧИЙ
+                    </a>
+                    <span class="rating__top-column-sum">
+                      98
+                    </span>
+                  </li>
+                  <li class="rating__top-column-item">
+                    <a href="#" class="rating__top-column-link">
+                      ВСЛ (ВладимирСтройЛес)
+                    </a>
+                    <span class="rating__top-column-sum">
+                      65
+                    </span>
+                  </li>
+                </ol>
+                <a class="rating__top-column-all-link" href="#">
+                  Все отзывы
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-list">
+            <div class="info-list__item">
+              <img src="./img/house.png" alt="Иконка домика" class="info-list__icon">
+              <div class="info-list__item-column">
+                <h5 class="info-list__item-title">Поселки<span class="info-list__item-amount">(66)</span></h5>
+                <p class="info-list__item-text">
+                  Найдите поселки с деревянными домами, с подрядом и без
+                </p>
+                <a href="#" class="info-list__item-link">
+                  Показать все
+                </a>
+              </div>
+              
+            </div>
+
+            <div class="info-list__item">
+              <img src="./img/builder.png" alt="Иконка Строителя" class="info-list__icon">
+              <div class="info-list__item-column">
+                <h5 class="info-list__item-title">Застройщики<span class="info-list__item-amount">(66)</span></h5>
+                <p class="info-list__item-text">
+                  Выберите компанию по строительству деревянных домов
+                </p>
+                <a href="#" class="info-list__item-link">
+                  Показать все
+                </a>
+              </div>
+              
+            </div>
+
+            <div class="info-list__item">
+              <img src="./img/project.png" alt="Иконка Проекта" class="info-list__icon">
+              <div class="info-list__item-column">
+                <h5 class="info-list__item-title">Проекты<span class="info-list__item-amount">(184)</span></h5>
+                <p class="info-list__item-text">
+                  Подберите проект деревянного дома по площади и типу
+                </p>
+                <a href="#" class="info-list__item-link">
+                  Показать все
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__review">
+        <div class="main__title-field">
+          <h3 class="main__title">
+            ОБЗОРЫ
+          </h3>
+          <a href="#" class="main__title-link">
+            Все обзоры
+          </a>
+        </div>
+
+        <div class="reviews">
+          <div class="reviews__item">
+            <div class="reviews__top-of-the-day">
+              <span class="reviews__top-of-the-day-text">
+                ОБЗОР ДНЯ
+              </span>
+            </div>
+            <div class="reviews__description">
+              <p class="reviews__date">9 апреля 2017<span class="reviews__date-comments">6</span></p>
+              <h4 class="reviews__title">
+                Финланд vs Русланд - есть разница!
+              </h4>
+              <p class="reviews__text">
+                Давненько мы не писали о победах отчественного деревянного домостроения над зарубежным, к примеру, финским...
+              </p>
+              <a class="reviews__arrow" href="#"></a>
+            </div>
+          </div>
+
+          <div class="reviews__item">
+            <div class="reviews__description">
+              <p class="reviews__date">9 апреля 2017<span class="reviews__date-comments">6</span></p>
+              <h4 class="reviews__title">
+                Финланд vs Русланд - есть разница!
+              </h4>
+              <p class="reviews__text">
+                Давненько мы не писали о победах отчественного деревянного домостроения над зарубежным, к примеру, финским...
+              </p>
+              <a class="reviews__arrow" href="#"></a>
+            </div>
+          </div>
+
+          <div class="reviews__item">
+            <div class="reviews__description">
+              <p class="reviews__date">9 апреля 2017<span class="reviews__date-comments">6</span></p>
+              <h4 class="reviews__title">
+                Финланд vs Русланд - есть разница!
+              </h4>
+              <p class="reviews__text">
+                Давненько мы не писали о победах отчественного деревянного домостроения над зарубежным, к примеру, финским...
+              </p>
+              <a class="reviews__arrow" href="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__projects">
+        <div class="main__title-field">
+          <h3 class="main__title">
+            ПРОЕКТЫ КАРКАСНЫХ ДОМОВ
+          </h3>
+          <a href="#" class="main__title-link">
+            Все проекты
+          </a>
+        </div>
+
+        <div class="projects">
+          <div class="projects__first">
+            <img src="./img/project1.png" alt="Первый проект каркасного дома" class="projects__first-img">
+            <img src="./img/big-shadow.png" alt="Фильтр яркости изображения" class="projects__first-img-shadow">
+            <a class="projects__title" href="#">St. Moritz (556,7 м<sup>2</sup>)</a>
+          </div>
+
+          <div class="projects__other">
+            <div class="projects__other-item">
+              <img src="./img/project2.png" alt="Второй проект каркасного дома" class="projects__other-img">
+              <img src="./img/shadow.png" alt="Фильтр яркости изображения" class="projects__first-img-shadow">
+              <a class="projects__title" href="#">St. Moritz (556,7 м<sup>2</sup>)</a>
+            </div>
+            <div class="projects__other-item">
+              <img src="./img/project3.png" alt="Второй проект каркасного дома" class="projects__other-img">
+              <img src="./img/shadow.png" alt="Фильтр яркости изображения" class="projects__first-img-shadow">
+              <a class="projects__title" href="#">St. Moritz (556,7 м<sup>2</sup>)</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="main__order-project-button" type="button">ЗАКАЗАТЬ ПРОЕКТ</button>
+      </div>
+
+      <div class="main__articles">
+        <div class="main__title-field">
+          <h3 class="main__title">
+            СТАТЬИ
+          </h3>
+          <a href="#" class="main__title-link">
+            Все статьи
+          </a>
+        </div>
+
+        <div class="reviews">
+            <div class="reviews__item">
+              <div class="reviews__description">
+                <p class="reviews__date">9 апреля 2017<span class="reviews__date-comments">6</span></p>
+                <h4 class="reviews__title">
+                  Финланд vs Русланд - есть разница!
+                </h4>
+                <p class="reviews__text">
+                  Давненько мы не писали о победах отчественного деревянного домостроения над зарубежным, к примеру, финским...
+                </p>
+                <a class="reviews__arrow" href="#"></a>
+              </div>
+            </div>
+  
+            <div class="reviews__item">
+              <div class="reviews__description">
+                <p class="reviews__date">9 апреля 2017<span class="reviews__date-comments">6</span></p>
+                <h4 class="reviews__title">
+                  Финланд vs Русланд - есть разница!
+                </h4>
+                <p class="reviews__text">
+                  Давненько мы не писали о победах отчественного деревянного домостроения над зарубежным, к примеру, финским...
+                </p>
+                <a class="reviews__arrow" href="#"></a>
+              </div>
+            </div>
+  
+            <div class="reviews__item">
+              <div class="reviews__description">
+                <p class="reviews__date">9 апреля 2017<span class="reviews__date-comments">6</span></p>
+                <h4 class="reviews__title">
+                  Финланд vs Русланд - есть разница!
+                </h4>
+                <p class="reviews__text">
+                  Давненько мы не писали о победах отчественного деревянного домостроения над зарубежным, к примеру, финским...
+                </p>
+                <a class="reviews__arrow" href="#"></a>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+      <div class="main__about">
+        <div class="about-building">
+          <h5 class="about-building__title">
+            Все о строительстве каркасных домов
+          </h5>
+          <p class="about-building__text">
+            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными 
+          </p>
+          <p class="about-building__text">
+            текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он 
+          </p>
+          <p class="about-building__text">
+            последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный риторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись. Она предупредила его: «В моей стране все переписывается по несколько раз. Единственное, что от меня осталось, это приставка «и». Возвращайся ты лучше в свою безопасную страну». Не послушавшись рукописи, наш текст продолжил свой путь. Вскоре ему повстречался коварный составитель
+          </p>
+        </div>
+      </div>
+
+    </main>
+    
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__logo">
+          <a href="index.html" class="footer__logo-link">
+            <img src="./img/logo-mobile.png" alt="Логотип мобильная версия" class="footer__logo-mobile">
+            <img src="./img/logo-desktop.png" alt="Логотип мобильная версия" class="footer__logo-desktop">
+          </a>
+        </div>
+        <div class="footer__right-column">
+          <div class="footer__content-top">
+            <div class="footer__copyright">
+              <span class="footer__copyright-text">
+                  © 2005–2019 Каркасник
+              </span>
+              <span class="footer__copyright-text">
+                  16+
+              </span>
+            </div>
+
+            <div class="footer__nav">
+              <a href="#" class="footer__links">Наши контакты</a>
+              <a href="#" class="footer__links">Условия использования сайта</a>
+              <a href="#" class="footer__links">Реклама на сайте</a>
+            </div>
+          </div>
+
+          <div class="footer__content-bottom">
+            <div class="footer__social-links">
+              <a href="#" class="footer__social-links-item">
+                <img src="./img/vk-big.png" alt="Логотип вконтакте" class="footer__social-links-img">
+              </a>
+              <a href="#" class="footer__social-links-item">
+                <img src="./img/facebook-big.png" alt="Логотип facebook" class="footer__social-links-img">
+              </a>
+              <a href="#" class="footer__social-links-item">
+                <img src="./img/insta-big.png" alt="Логотип Инстаграмм" class="footer__social-links-img">
+              </a>
+              <a href="#" class="footer__social-links-item">
+                <img src="./img/youtube-big.png" alt="Логотип YouTube" class="footer__social-links-img">
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    <div class="popup">
+      <button class="popup__close"></button>
+      <div class="popup__content"></div>
+    </div>
+
+    <div class="modal">
+      
+      <div class="modal__content"></div>
+      <div class="modal__search">
+        <button class="modal__close modal__close--white"></button>
+        <span class="modal__search-title">
+          Поиск по сайту
+        </span>
+        <form class="modal__search-form" action="" method="get">
+          <input class="modal__search-input" name="search" type="search">
+          <button class="modal__search-button" type="submit">НАЙТИ</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

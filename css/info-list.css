@@ -1,0 +1,95 @@
+.info-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+  padding: 250px 15px 60px;
+  max-width: 1140px;
+}
+
+.info-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+}
+
+.info-list__icon {
+  padding-right: 15px;
+  width: 82px;
+  height: 82px;
+}
+
+.info-list__item-title {
+  margin-top: 0;
+  font-family: 'Cera Pro Bold';
+  font-size: 20px;
+  color: #231f20;
+}
+
+.info-list__item-amount {
+  padding-left: 5px;
+  font-size: 14px;
+  color: #bd2226;
+}
+
+.info-list__item-text {
+  font-size: 14px;
+  color: #231f20;
+}
+
+.info-list__item-link {
+  font-family: 'Cera Pro Bold';
+  font-size: 14px;
+  color: #bd2226;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .info-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 auto;
+    padding: 50px 15px 60px;
+    max-width: 1140px;
+  }
+  
+  .info-list__item {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .info-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 auto;
+    padding: 50px 15px 60px;
+    max-width: 1140px;
+  }
+  
+  .info-list__item {
+    width: 80%;
+    padding: 30px 0;
+  }
+}

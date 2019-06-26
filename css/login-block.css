@@ -1,0 +1,73 @@
+.login-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 15px;
+}
+
+.login-block__profile {
+  position: relative;
+  padding-left: 50px;
+}
+
+.login-block__profile-button {
+  background: none;
+  border: none;
+  font-family: 'Cera Pro Bold';
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-block__profile-button:before {
+  position: absolute;
+  left: 12px;
+  top: -5px;
+  content: '';
+  background-image: url(../img/key.png);
+  width: 30px;
+  height: 30px;
+}
+
+.login-block__search {
+  position: relative;
+  border-right: 1px solid #fff;
+  padding-right: 15px;
+  width: 20px;
+  height: 21px;
+}
+
+.login-block__search-button {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  background-color: transparent;
+  background-image: url(../img/search.png);
+  background-repeat: no-repeat;
+  border: none;
+  padding: 0;
+  width: 20px;
+  height: 21px;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .login-block__profile-button {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .login-block {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+  .login-block {
+    padding: 15px 0;
+  }
+}

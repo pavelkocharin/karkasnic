@@ -1,0 +1,174 @@
+.reviews  {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 80px;
+  padding: 0;
+  width: 100%;
+  -height: 100%;
+}
+
+.reviews__item {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  margin: 10px;
+  width: 350px;
+  height: 400px;
+}
+
+.reviews__item:first-child {
+  background-image: url(../img/house1.png);
+}
+
+.reviews__item:nth-child(2) {
+  background-image: url(../img/house2.png);
+}
+
+.reviews__item:nth-child(3) {
+  background-image: url(../img/house3.png);
+}
+
+.reviews__top-of-the-day {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #bd2226;
+  width: 180px;
+  height: 57px;
+}
+
+.reviews__top-of-the-day-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 20px;
+  font-family: 'Cera Pro Bold';
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.reviews__description {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #fff;
+  padding: 25px;
+  width: calc(85% - 30px);
+  color: #231f20;
+}
+
+.reviews__date {
+  margin: 0;
+  font-size: 14px;
+  color: #bd2226;
+}
+
+.reviews__date-comments {
+  position: relative;
+  margin-left: 80px;
+}
+
+.reviews__date-comments:before {
+  position: absolute;
+  top: 0;
+  left: -30px;
+  content: '';
+  background-image: url(../img/comment.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+.reviews__title {
+  margin: 15px 0 25px;
+  width: 100%;
+  font-family: 'Cera Pro Bold';
+  font-size: 20px;
+}
+
+.reviews__text {
+  margin: 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+.reviews__arrow {
+  position: absolute;
+  top: -25px;
+  right: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  width: 50px;
+  height: 50px;
+}
+
+.reviews__arrow:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: url(../img/arrow.png) no-repeat center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: 320px) and (max-width: 1199px) {
+  .reviews  {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .reviews  {
+    margin: 0 auto 20px;
+  }
+
+  .reviews__item {
+    display: none;
+  }
+
+  .reviews__item:first-child {
+    display: block;
+  }
+}
