@@ -11,10 +11,6 @@
   z-index: 15;
 }
 
-.modal__active {
-  display: block;
-}
-
 .modal__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,30 +26,25 @@
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  /* top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); */
   width: 100%;
   height: 100%;
 }
 
 .modal__search {
-  position: absolute;
-  display: flex;
+  position: relative;
+  display: none;
   flex-direction: column;
   align-items: center;
   background: #bd2226;
   width: 100%;
   height: 100%;
-  z-index: 20;
 }
 
-.modal__close {
+.modal__close,
+.modal__close-user-region {
   position: absolute;
   right: 45px;
-  top: 25px;
+  top: 45px;
   display: none;
   background: transparent;
   border: none;
@@ -68,22 +59,137 @@
   background: url(../img/esc-white.png) no-repeat 50% 50%;
 }
 
-.modal__search-title {}
-
 .modal__search-form {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  font-family: 'Cera Pro Bold';
+}
+
+.modal__search-title {
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
 }
 
 .modal__search-input {
+  position: relative;
   border: none;
   border-bottom: 2px solid #fff;
   background-color: transparent;
-  width: 70%;
+  padding: 1px 80px 1px 45px;
+  width: 100%;
+  height: 68px;
+  font-size: 20px;
+}
+
+.modal__search-lup {
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+  content: '';
+  background: url(../img/lup.png) no-repeat;
+  background-size: contain;
+  width: 45px;
+  height: 45px;
 }
 
 .modal__search-button {
   position: absolute;
+  bottom: 12px;
+  right: 0;
   background-color: #fff;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .16);
+  width: 15%;
+  min-width: 80px;
+  height: 55px;
+  font-family: 'Cera Pro Bold';
+  font-size: 20px;
   color: #bd2226;
   cursor: pointer;
+}
+
+.modal__user-region {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .16);
+  width: 70%;
+  height: 70%;
+  text-align: center;
+  font-family: 'Cera Pro Bold';
+  font-size: 42px;
+}
+
+.modal__user-region-text {
+  color: #231f20;
+}
+
+.modal__user-region-text--red {
+  padding: 20px 15px;
+  color: #bd2226;
+}
+
+.modal__user-region-button {
+  background: #bd2226;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .4);
+  margin: 15px 0;
+  width: 140px;
+  height: 58px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal__choose-user-region-button {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  font-size: 14px;
+  color: #bd2226;
+  cursor: pointer;
+}
+
+.modal__active {
+  display: block;
+}
+
+.modal__flex {
+  display: flex;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .modal__search-button {
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .modal__search-title {
+    font-size: 2rem;
+  }
+
+  .modal__user-region  {
+    width: 90%;
+    font-size: 30px;
+  }
+
+  .modal__user-region-text--red {
+    padding: 5px 15px;
+  }
+
+  .modal__close-user-region {
+    right: 30px;
+    top: 30px;
+  }
 }

@@ -16,16 +16,16 @@
   var userLogin = document.querySelector('.login-block');
 
   //функции открытия/закрытия мобильной версии меню
-  if (menuStyle.display == 'block') {
     openMenuButton.addEventListener('click', function (){
-      openPopupMenu();
+      if (menuStyle.display == 'block') {
+        openPopupMenu();
+      }
     });
+
     closePopupButton.addEventListener('click', function (){
       closePopupMenu();
     });
-  };
-
-
+  
   function openPopupMenu() {
     popup.classList.add(popupActiveClass);
     closePopupButton.classList.add(popupActiveClass);
@@ -51,10 +51,15 @@
 
   //для модальных окон
   var searchOpenButton = document.querySelector('.login-block__search-button');
-  var modalCloseButtons = document.querySelectorAll('.modal__close');
+  var modalCloseButtons = document.querySelector('.modal__close');
   var modalLayout = document.querySelector('.modal');
-  var modalContent = document.querySelector('.modal__content');
+  var modalSearch = document.querySelector('.modal__search');
+  var openRegionButton = document.querySelector('.user-region__button');
+  var modalUserRegion = document.querySelector('.modal__user-region');
+  var modalCloseUserRegionButton = document.querySelector('.modal__close-user-region');
   var modalActiveClass = 'modal__active';
+  var modalFlexClass = 'modal__flex';
+  var userRegionButtonAgree = document.querySelector('.modal__user-region-button');
 
   //функции работы модальных окон
 
@@ -62,11 +67,49 @@
     openSearch();
   });
 
+  modalCloseButtons.addEventListener('click', function (){
+    closeModal();
+  });
+
+  openRegionButton.addEventListener('click', function (){
+    openUserRegion();
+  });
+
+  modalCloseUserRegionButton.addEventListener('click', function (){
+    closeModal();
+  });
+
+  userRegionButtonAgree.addEventListener('click', function (){
+    closeModal();
+  });
+
   function openSearch() {
     if (menuStyle.display == 'block') {
       closePopupMenu();
     }
     modalLayout.classList.add(modalActiveClass);
+    modalCloseButtons.classList.add(modalActiveClass);
+    modalSearch.classList.add(modalFlexClass);
+    modalUserRegion.classList.remove(modalFlexClass);
   }
 
+  function closeModal() {
+    if (menuStyle.display == 'block') {
+      closePopupMenu();
+    }
+    modalLayout.classList.remove(modalActiveClass);
+    modalCloseButtons.classList.remove(modalActiveClass);
+    modalSearch.classList.remove(modalFlexClass);
+    modalCloseUserRegionButton.classList.remove(modalActiveClass);
+  }
+
+  function openUserRegion() {
+    if (menuStyle.display == 'block') {
+      closePopupMenu();
+    }
+    modalLayout.classList.add(modalActiveClass);
+    modalCloseButtons.classList.add(modalActiveClass);
+    modalUserRegion.classList.add(modalFlexClass);
+    modalCloseUserRegionButton.classList.add(modalActiveClass);
+  }
 }());

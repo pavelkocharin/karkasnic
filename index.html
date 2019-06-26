@@ -500,17 +500,33 @@
 
     <div class="modal">
       
-      <div class="modal__content"></div>
-      <div class="modal__search">
-        <button class="modal__close modal__close--white"></button>
-        <span class="modal__search-title">
-          Поиск по сайту
-        </span>
-        <form class="modal__search-form" action="" method="get">
-          <input class="modal__search-input" name="search" type="search">
-          <button class="modal__search-button" type="submit">НАЙТИ</button>
-        </form>
+      <div class="modal__content">
+        <div class="modal__search">
+          <button class="modal__close modal__close--white"></button>
+          
+          <form class="modal__search-form" action="" method="get">
+            <span class="modal__search-title">
+              Поиск по сайту
+            </span>
+            <input class="modal__search-input" name="search" type="search">
+            <button class="modal__search-button" type="submit">НАЙТИ</button>
+            <div class="modal__search-lup"></div>
+          </form>
+        </div>
+
+        <div class="modal__user-region">
+          <button class="modal__close-user-region"></button>
+          <span class="modal__user-region-text">
+            Ваш регион
+          </span>
+          <span class="modal__user-region-text modal__user-region-text--red">
+            Москва и область
+          </span>
+          <button class="modal__user-region-button" type="button">ДА</button>
+          <button class="modal__choose-user-region-button" type="button">Выбрать другой</button>
+        </div>
       </div>
+      
     </div>
 
     <script src="js/index.js"></script>
