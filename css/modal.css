@@ -246,7 +246,7 @@
 .modal__choose-region-regular {
   padding: 10px 15px 10px 0;
   min-width: 150px; 
-  text-align-last: left;
+  text-align: left;
   font-family: 'Cera Pro Regular';
   color: #bd2226;
 }

@@ -21,10 +21,7 @@
         openPopupMenu();
       }
     });
-
-    closePopupButton.addEventListener('click', function (){
-      closePopupMenu();
-    });
+    closePopupButton.addEventListener('click', closePopupMenu);
   
   function openPopupMenu() {
     popup.classList.add(popupActiveClass);
@@ -66,33 +63,13 @@
 
   //функции работы модальных окон
 
-  searchOpenButton.addEventListener('click', function (){
-    openSearch();
-  });
-
-  modalCloseButtons.addEventListener('click', function (){
-    closeModal();
-  });
-
-  openRegionButton.addEventListener('click', function (){
-    openUserRegion();
-  });
-
-  modalCloseUserRegionButton.addEventListener('click', function (){
-    closeModal();
-  });
-
-  userRegionButtonAgree.addEventListener('click', function (){
-    closeModal();
-  });
-
-  openChooseRegionButton.addEventListener('click', function (){
-    openChooseRegion();
-  });
-
-  modalCloseChooseRegionButton.addEventListener('click', function (){
-    closeModal();
-  });
+  openRegionButton.addEventListener('click', openUserRegion);
+  searchOpenButton.addEventListener('click', openSearch);
+  modalCloseButtons.addEventListener('click', closeModal);
+  modalCloseUserRegionButton.addEventListener('click', closeModal);
+  userRegionButtonAgree.addEventListener('click', closeModal);
+  openChooseRegionButton.addEventListener('click', openChooseRegion);
+  modalCloseChooseRegionButton.addEventListener('click', closeModal);
 
   function openSearch() {
     if (menuStyle.display == 'block') {
@@ -137,6 +114,5 @@
     modalChooseRegion.classList.add(modalFlexClass);
     modalCloseChooseRegionButton.classList.add(modalActiveClass);
   };
-  
 
 }());
