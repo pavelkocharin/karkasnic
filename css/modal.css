@@ -33,15 +33,21 @@
 .modal__search {
   position: relative;
   display: none;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #bd2226;
   width: 100%;
   height: 100%;
 }
 
 .modal__close,
-.modal__close-user-region {
+.modal__close-user-region,
+.modal__close-choose-region {
   position: absolute;
   right: 45px;
   top: 45px;
@@ -63,10 +69,19 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 70%;
   font-family: 'Cera Pro Bold';
 }
@@ -106,7 +121,8 @@
   right: 0;
   background-color: #fff;
   border: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .16);
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, .16);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, .16);
   width: 15%;
   min-width: 80px;
   height: 55px;
@@ -119,11 +135,19 @@
 .modal__user-region {
   position: relative;
   display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .16);
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, .16);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, .16);
   width: 70%;
   height: 70%;
   text-align: center;
@@ -143,7 +167,8 @@
 .modal__user-region-button {
   background: #bd2226;
   border: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, .4);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, .4);
   margin: 15px 0;
   width: 140px;
   height: 58px;
@@ -161,11 +186,86 @@
   cursor: pointer;
 }
 
+.modal__choose-region {
+  position: relative;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, .16);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, .16);
+  padding: 30px;  
+  width: 90%;
+  height: 80%;
+  text-align: center;
+  font-family: 'Cera Pro Bold';
+  font-size: 42px;
+}
+
+.modal__choose-region-list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: justify;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 70px;
+  width: 80%;
+  height: 70%;
+  font-size: 14px;
+  color: #bd2226;
+
+  background-attachment: scroll;
+  overflow-y: auto;
+}
+
+.modal__choose-region-bold {
+  padding: 10px 15px 10px 0;
+  font-family: 'Cera Pro Bold';
+  color: #bd2226;
+}
+
+.modal__choose-region-regular {
+  padding: 10px 15px 10px 0;
+  min-width: 150px; 
+  text-align-last: left;
+  font-family: 'Cera Pro Regular';
+  color: #bd2226;
+}
+
+.modal__choose-region-letter {
+  padding: 25px 0 10px;
+  text-decoration: none;
+  font-family: 'Cera Pro Bold';
+  font-size: 24px;
+  color: #231f20;
+}
+
 .modal__active {
   display: block;
 }
 
 .modal__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -191,5 +291,21 @@
   .modal__close-user-region {
     right: 30px;
     top: 30px;
+  }
+
+  .modal__choose-region {
+    padding-top: 65px;  
+    width: 100%;
+    height: 100vh;
+    font-size: 2rem;
+  }
+
+  .modal__close-choose-region {
+    top: 15px;
+    right: 45px;
+  }
+  
+  .modal__choose-region-list {
+    padding-top: 30px;
   }
 }

@@ -60,6 +60,9 @@
   var modalActiveClass = 'modal__active';
   var modalFlexClass = 'modal__flex';
   var userRegionButtonAgree = document.querySelector('.modal__user-region-button');
+  var openChooseRegionButton = document.querySelector('.modal__choose-user-region-button');
+  var modalCloseChooseRegionButton = document.querySelector('.modal__close-choose-region');
+  var modalChooseRegion = document.querySelector('.modal__choose-region');
 
   //функции работы модальных окон
 
@@ -83,6 +86,14 @@
     closeModal();
   });
 
+  openChooseRegionButton.addEventListener('click', function (){
+    openChooseRegion();
+  });
+
+  modalCloseChooseRegionButton.addEventListener('click', function (){
+    closeModal();
+  });
+
   function openSearch() {
     if (menuStyle.display == 'block') {
       closePopupMenu();
@@ -91,7 +102,7 @@
     modalCloseButtons.classList.add(modalActiveClass);
     modalSearch.classList.add(modalFlexClass);
     modalUserRegion.classList.remove(modalFlexClass);
-  }
+  };
 
   function closeModal() {
     if (menuStyle.display == 'block') {
@@ -101,7 +112,9 @@
     modalCloseButtons.classList.remove(modalActiveClass);
     modalSearch.classList.remove(modalFlexClass);
     modalCloseUserRegionButton.classList.remove(modalActiveClass);
-  }
+    modalChooseRegion.classList.remove(modalFlexClass);
+    modalCloseChooseRegionButton.classList.remove(modalActiveClass);
+  };
 
   function openUserRegion() {
     if (menuStyle.display == 'block') {
@@ -111,5 +124,19 @@
     modalCloseButtons.classList.add(modalActiveClass);
     modalUserRegion.classList.add(modalFlexClass);
     modalCloseUserRegionButton.classList.add(modalActiveClass);
-  }
+  };
+
+  function openChooseRegion() {
+    if (menuStyle.display == 'block') {
+      closePopupMenu();
+    }
+    modalUserRegion.classList.remove(modalFlexClass);
+    modalCloseUserRegionButton.classList.remove(modalActiveClass);
+    modalLayout.classList.add(modalActiveClass);
+    modalCloseButtons.classList.add(modalActiveClass);
+    modalChooseRegion.classList.add(modalFlexClass);
+    modalCloseChooseRegionButton.classList.add(modalActiveClass);
+  };
+  
+
 }());
