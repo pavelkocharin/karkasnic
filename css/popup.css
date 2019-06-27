@@ -8,9 +8,17 @@
   background: #868225;
   width: 100%;
   height: 100vh;
+  -webkit-animation: change-background .3s ease 1;
+          animation: change-background .3s ease 1;
+}
 
-  animation: change-background .3s ease infinite;
-  animation-iteration-count: 1;
+@-webkit-keyframes change-background {
+  0% {
+    background: transparent;
+  }
+  100% {
+    background: #868225;
+  }
 }
 
 @keyframes change-background {
@@ -24,7 +32,7 @@
 
 .popup__close {  
   position: absolute;
-  right: 45px;
+  right: 35px;
   top: 25px;
   display: none;
   background: transparent;

@@ -42,10 +42,14 @@
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  margin: 80px auto 20px;
+  margin: 125px auto 20px;
   width: 100%;
-  max-width: 1170px;
+  max-width: 1200px;
   font-family: 'Cera Pro Bold';
+}
+
+.main__title-field--projects {
+  margin-top: 65px;
 }
 
 .main__title {
@@ -56,6 +60,11 @@
   color: #231f20;
 }
 
+.main__title--projects {
+  padding-bottom: 20px;
+  font-size: 28px;
+}
+
 .main__title-link {
   font-size: 14px;
   color: #bd2226;
@@ -64,13 +73,13 @@
 .main__review,
 .main__articles {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1160px;
 }
 
 .main__order-project-button {
   background: #bd2226;
   border: none;
-  margin: 10px auto 65px;
+  margin: 10px auto 100px;
   padding: 0;
   width: 250px;
   height: 58px;
@@ -84,7 +93,7 @@
 .main__about  {
   margin: 0 auto;
   width: 100%;
-  max-width: 1170px;
+  max-width: 1160px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -99,6 +108,7 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-top: 30px;
   }
 
   .main__title {
@@ -107,5 +117,13 @@
 
   .main__title-link {
     padding: 15px 0 0 45px;
+  }
+
+  .main__title--projects {
+    padding-bottom: 10px;
+  }
+
+  .main__order-project-button {
+    margin-bottom: 30px;
   }
 }

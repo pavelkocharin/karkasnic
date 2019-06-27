@@ -13,7 +13,7 @@
   -webkit-box-align: space-between;
       -ms-flex-align: space-between;
           align-items: space-between;
-  margin: 50px auto;
+  margin: 68px auto 80px;
   width: 100%;
   max-width: 1170px;
 }
@@ -35,7 +35,10 @@
 }
 
 .footer__logo-mobile {
+  margin-bottom: -3px;
   padding-right: 15px;
+  width: 60px;
+  height: px;
 }
 
 .footer__social-links {
@@ -45,6 +48,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 22px;
   padding-right: 30px;
 }
 
@@ -114,7 +118,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 10px;
+    margin: 10px 0 0;
   }
 
   .footer__nav {
@@ -128,6 +132,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: 30px;
   }
 
   .footer__links {

@@ -6,12 +6,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 50px 15px 80px;
+  padding: 50px 15px 140px;
   color: #231f20;
 }
 
 .about-building__title {
-  margin-bottom: 15px;
+  margin-bottom: 32px;
   text-align: center;
   font-family: 'Cera Pro Bold';
   font-size: 24px;
@@ -23,6 +23,11 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
   .about-building {
-    padding: 0 15px 30px;
+    padding: 0 33px 30px;
+  }
+
+  .about-building__title {
+    margin: 20px 0;
+    text-align: left;
   }
 }

@@ -5,7 +5,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-right: 30px;
+  padding-right: 40px;
 }
 
 .social-links__item {

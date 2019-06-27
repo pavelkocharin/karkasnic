@@ -10,7 +10,7 @@
 
 .login-block__profile {
   position: relative;
-  padding-left: 50px;
+  padding-left: 55px;
 }
 
 .login-block__profile-button {
@@ -24,7 +24,7 @@
 
 .login-block__profile-button:before {
   position: absolute;
-  left: 12px;
+  left: 18px;
   top: -5px;
   content: '';
   background-image: url(../img/key.png);

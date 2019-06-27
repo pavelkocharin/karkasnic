@@ -5,7 +5,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 auto 50px;
+  margin: 0 auto 85px;
   width: 100%;
   max-width: 1170px;
   overflow: hidden;
@@ -70,8 +70,14 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .projects {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
   .projects__first {
-    width: 100%;
+    width: 85%;
+    text-align: center;
   }
 
   .projects__other {

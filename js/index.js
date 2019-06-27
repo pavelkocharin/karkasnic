@@ -71,10 +71,14 @@
   openChooseRegionButton.addEventListener('click', openChooseRegion);
   modalCloseChooseRegionButton.addEventListener('click', closeModal);
 
-  function openSearch() {
+  function checkMenuStyle() {
     if (menuStyle.display == 'block') {
       closePopupMenu();
     }
+  };
+
+  function openSearch() {
+    checkMenuStyle();
     modalLayout.classList.add(modalActiveClass);
     modalCloseButtons.classList.add(modalActiveClass);
     modalSearch.classList.add(modalFlexClass);
@@ -82,9 +86,7 @@
   };
 
   function closeModal() {
-    if (menuStyle.display == 'block') {
-      closePopupMenu();
-    }
+    checkMenuStyle();
     modalLayout.classList.remove(modalActiveClass);
     modalCloseButtons.classList.remove(modalActiveClass);
     modalSearch.classList.remove(modalFlexClass);
@@ -94,9 +96,7 @@
   };
 
   function openUserRegion() {
-    if (menuStyle.display == 'block') {
-      closePopupMenu();
-    }
+    checkMenuStyle();
     modalLayout.classList.add(modalActiveClass);
     modalCloseButtons.classList.add(modalActiveClass);
     modalUserRegion.classList.add(modalFlexClass);
@@ -104,9 +104,7 @@
   };
 
   function openChooseRegion() {
-    if (menuStyle.display == 'block') {
-      closePopupMenu();
-    }
+    checkMenuStyle();
     modalUserRegion.classList.remove(modalFlexClass);
     modalCloseUserRegionButton.classList.remove(modalActiveClass);
     modalLayout.classList.add(modalActiveClass);
